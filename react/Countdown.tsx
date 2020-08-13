@@ -3,13 +3,13 @@ import { TimeSplit } from './typings/global'
 import { tick } from './utils/time'
 import { useCssHandles } from 'vtex.css-handles'
 
+const CSS_HANDLES = ['countdown']
+
 const DEFAULT_TARGET_DATE = (new Date('2020-08-16')).toISOString()
 
-const CSS_HANDLES = ['countdown']
 interface CountdownProps {
   targetDate: string
  }
-
 
 const Countdown: StorefrontFunctionComponent<CountdownProps> = ({ targetDate = DEFAULT_TARGET_DATE }) => {
   const [timeRemaining, setTime] = useState<TimeSplit>({
