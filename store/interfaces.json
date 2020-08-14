@@ -2,7 +2,7 @@
   "countdown": {
     "component": "Countdown"
   },
-  "countdonw.title": {
+  "countdown.title": {
     "component": "Title"
   }
 }
