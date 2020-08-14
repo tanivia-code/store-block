@@ -28,7 +28,7 @@ const handles = useCssHandles(CSS_HANDLES)
 tick(targetDate, setTime)
 
   return (
-      <div className={`${handles.countdown} db tc`}>
+      <div className={`${handles.countdown} t-heading-2 fw3 w-100 c-muted-1 db tc`}>
         {`${timeRemaining.hours}:${timeRemaining.minutes}:${timeRemaining.seconds}`}
       </div>
   )
