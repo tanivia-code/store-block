@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { TimeSplit } from './typings/global'
 import { tick } from './utils/time'
 import { useCssHandles } from 'vtex.css-handles'
+import { FormattedMessage } from 'react-intl'
 
 const CSS_HANDLES = ['countdown']
 
