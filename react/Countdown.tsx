@@ -6,7 +6,6 @@ import { useQuery } from 'react-apollo'
 import useProduct from 'vtex.product-context/useProduct'
 import productReleaseDate from './queries/productReleaseDate.graphql'
 
-
 const CSS_HANDLES = ['countdown']
 
 const DEFAULT_TARGET_DATE = (new Date('2020-08-16')).toISOString()
@@ -18,7 +17,7 @@ const { data, loading, error } = useQuery(productReleaseDate, {
     slug: linkText, 
    },
    ssr: false
-})  
+})
 
 if (loading) {
   return (
