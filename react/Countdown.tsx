@@ -45,8 +45,7 @@ if (!product) {
 interface CountdownProps {
   targetDate: string
 }
-const Countdown: StorefrontFunctionComponent<CountdownProps> = ({ 
-  targetDate = DEFAULT_TARGET_DATE,
+const Countdown: StorefrontFunctionComponent<CountdownProps> = ({
 }) => {
   const [
     timeRemaining, 
