@@ -10,7 +10,9 @@ const CSS_HANDLES = ['countdown']
 
 const DEFAULT_TARGET_DATE = (new Date('2020-08-16')).toISOString()
 
-const { product: { linkText } = useProduct()
+const productContext = useProduct()
+const product = productContext?.product
+const linkText = product?.linkText
 
 const { data, loading, error } = useQuery(productReleaseDate, {
    variables: {
