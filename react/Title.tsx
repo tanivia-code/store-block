@@ -27,7 +27,7 @@ const Title: StorefrontFunctionComponent<TitleProps> = ({title}) => {
       title: {
         title: 'editor.countdown.title.title',
         type: 'string',
-        default: null,
+        default: null
       },
     },
   }
